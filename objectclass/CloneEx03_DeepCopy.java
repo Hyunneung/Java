@@ -14,7 +14,7 @@ public class CloneEx03_DeepCopy {
 		c1.p.y = 5;
 		c1.r = 5;
 
-		System.out.println("== c1 º¯°æ ÈÄ == ");
+		System.out.println("== c1 ë³€ê²½ í›„ == ");
 		System.out.println("[c1] " + c1);
 		System.out.println("[c2] " + c2);
 	}
@@ -50,8 +50,8 @@ class Circle2 implements Cloneable {
 	@Override
 	public Circle2 clone() {
 		try {
-			Circle2 c = (Circle2) super.clone(); // clone()À¸·Î ±âº»Çü ÇÊµå¸¸ º¹Á¦ÇÑ Circle2 °´Ã¼ »ı¼º
-			c.p = new Point(this.p.x, this.p.y); // º¹Á¦ÇÑ °´Ã¼¿¡ ÂüÁ¶Çü ÇÊµå °´Ã¼ »õ·Î »ı¼º
+			Circle2 c = (Circle2) super.clone(); // clone()ìœ¼ë¡œ ê¸°ë³¸í˜• í•„ë“œë§Œ ë³µì œí•œ Circle2 ê°ì²´ ìƒì„±
+			c.p = new Point(this.p.x, this.p.y); // ë³µì œí•œ ê°ì²´ì— ì°¸ì¡°í˜• í•„ë“œ ê°ì²´ ìƒˆë¡œ ìƒì„±
 			return c;
 
 		} catch (CloneNotSupportedException e) {
