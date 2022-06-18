@@ -12,9 +12,9 @@ public class CloneEx02 {
 		r1.width = 55;
 		r1.height = 44;
 
-		System.out.println("== r1 º¯°æ ÈÄ == ");
+		System.out.println("== r1 ë³€ê²½ í›„ == ");
 		System.out.println("[r1] " + r1);
-		System.out.println("[r2] " + r2); // r2´Â r1 °´Ã¼°¡ º°°³·Î º¹Á¦µÈ °ÍÀÌ¹Ç·Î r1 °ª º¯°æ°ú ¹«°üÇÏ´Ù.
+		System.out.println("[r2] " + r2); // r2ëŠ” r1 ê°ì²´ê°€ ë³„ê°œë¡œ ë³µì œëœ ê²ƒì´ë¯€ë¡œ r1 ê°’ ë³€ê²½ê³¼ ë¬´ê´€í•˜ë‹¤.
 	}
 
 }
