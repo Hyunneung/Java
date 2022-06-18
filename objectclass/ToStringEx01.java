@@ -4,15 +4,15 @@ public class ToStringEx01 {
 
 	public static void main(String[] args) {
 		GoodStock gs = new GoodStock("73527", 200);
-		System.out.println("===== toStirng() »ı·« =====\n" + gs);
-		System.out.println("\n===== toStirng() È£Ãâ =====\n" + gs.toString());
+		System.out.println("===== toStirng() ìƒëµ =====\n" + gs);
+		System.out.println("\n===== toStirng() í˜¸ì¶œ =====\n" + gs.toString());
 	}
 
 }
 
 class GoodStock {
-	String goodsCode;  // »óÇ°ÄÚµå
-	int stockNum;  // Àç°í¼ö·®
+	String goodsCode;  // ìƒí’ˆì½”ë“œ
+	int stockNum;  // ì¬ê³ ìˆ˜ëŸ‰
 
 	GoodStock(String goodsCode, int stockNum) {
 		this.goodsCode = goodsCode;
@@ -21,6 +21,6 @@ class GoodStock {
 	
 	@Override
 	public String toString() {
-		return "»óÇ°ÄÚµå: " + this.goodsCode + ", Àç°í¼ö·®: " + this.stockNum;
+		return "ìƒí’ˆì½”ë“œ: " + this.goodsCode + ", ì¬ê³ ìˆ˜ëŸ‰: " + this.stockNum;
 	}
 }
