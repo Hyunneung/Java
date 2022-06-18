@@ -5,26 +5,26 @@ public class ToStringEx02 {
 	public static void main(String args[]) {
 
 		Student2[] students = { 
-				   new Student2("°­È£µ¿", 85, 60, 70),
-	               new Student2("ÀÌ½Â±â", 90, 95, 80), 
-	               new Student2("À¯Àç¼®", 75, 80, 100), 
-	               new Student2("ÇÏÇÏ", 80, 70, 95), 
-	               new Student2("ÀÌ±¤¼ö", 100, 65, 80) };
+				   new Student2("ê°•í˜¸ë™", 85, 60, 70),
+	               new Student2("ì´ìŠ¹ê¸°", 90, 95, 80), 
+	               new Student2("ìœ ì¬ì„", 75, 80, 100), 
+	               new Student2("í•˜í•˜", 80, 70, 95), 
+	               new Student2("ì´ê´‘ìˆ˜", 100, 65, 80) };
 		
 		printStudent(students);
 		
 	}
 
 	static void printStudent(Student2[] objs) {
-		System.out.print("==========    ÇĞ»ıº°   /  °ú¸ñº° ÃÑÁ¡±¸ÇÏ±â  ==========\n\t");
-		System.out.print("±¹¾î\t¿µ¾î\t¼öÇĞ\tÃÑÁ¡\tÆò±Õ\n");
+		System.out.print("==========    í•™ìƒë³„   /  ê³¼ëª©ë³„ ì´ì êµ¬í•˜ê¸°  ==========\n\t");
+		System.out.print("êµ­ì–´\tì˜ì–´\tìˆ˜í•™\tì´ì \tí‰ê· \n");
 		for (Student2 obj : objs) {
 			System.out.println(obj.toString());
 		}
 		for(int j=0;j<45;j++){
 			System.out.print("=");
 		}
-		System.out.print("\nÃÑÁ¡\t");
+		System.out.print("\nì´ì \t");
 		System.out.println(Student2.korTotal+"\t"
 		                  +Student2.engTotal+"\t"
 				          +Student2.mathTotal);		
@@ -62,6 +62,6 @@ class Student2 {
 	public String toString() {
 
 		return this.name + "\t" + this.kor + "\t" + this.eng + "\t" + this.math + "\t" + this.getTotal() + "\t"
-				+ Math.round(this.getAverage() * 10) / 10.0; // Æò±Õ String.format("%.1f", this.getAverage()) µµ °¡´É
+				+ Math.round(this.getAverage() * 10) / 10.0; // í‰ê·  String.format("%.1f", this.getAverage()) ë„ ê°€ëŠ¥
 	}
 }
